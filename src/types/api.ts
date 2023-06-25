@@ -117,11 +117,11 @@ export type LandingPageProps = {
   landingPage: {
     data: {
       attributes: {
-        Logo: LogoProps
-        Header: HeaderProps
-        SectionBriefing: SectionBriefingProps
-        SectionGetStarted: SectionGetStartedProps
-        Footer: FooterProps
+        logo: LogoProps
+        header: HeaderProps
+        sectionBriefing: SectionBriefingProps
+        sectionGetStarted: SectionGetStartedProps
+        footer: FooterProps
       }
     }
   }

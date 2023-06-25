@@ -10,7 +10,7 @@ type HeaderProps = {
 
 const Header = ({ landingPage }: HeaderProps) => {
   const {
-    attributes: { Header }
+    attributes: { header }
   } = landingPage.data
 
   return (
@@ -20,14 +20,14 @@ const Header = ({ landingPage }: HeaderProps) => {
       </S.Container>
       <S.Content>
         <S.TextBlock>
-          <S.Title>{Header.title}</S.Title>
-          <S.Description>{Header.description}</S.Description>
+          <S.Title>{header.title}</S.Title>
+          <S.Description>{header.description}</S.Description>
           <Button
             onClick={() => console.log('button click!')}
             ariaLabel="Click to submit the form"
-            href={Header.button.url}
+            href={header.button.url}
           >
-            {Header.button.label}
+            {header.button.label}
           </Button>
         </S.TextBlock>
       </S.Content>

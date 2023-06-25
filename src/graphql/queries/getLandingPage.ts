@@ -13,8 +13,8 @@ const GET_LANDING_PAGE = `
     label
   }
 
-  fragment Logo on LandingPage {
-    Logo {
+  fragment logo on LandingPage {
+    logo {
       image {
         ...imageData
       }
@@ -24,8 +24,8 @@ const GET_LANDING_PAGE = `
     }
   }
 
-  fragment Header on LandingPage {
-    Header {
+  fragment header on LandingPage {
+    header {
       title
       description
       button {
@@ -43,8 +43,8 @@ const GET_LANDING_PAGE = `
     }
   }
 
-  fragment SectionBriefing on LandingPage {
-    SectionBriefing {
+  fragment sectionBriefing on LandingPage {
+    sectionBriefing {
       briefingCard {
         title
         description
@@ -55,8 +55,8 @@ const GET_LANDING_PAGE = `
     }
   }
 
-  fragment SectionGetStarted on LandingPage {
-    SectionGetStarted {
+  fragment sectionGetStarted on LandingPage {
+    sectionGetStarted {
       title
       button {
         ...buttonComponent
@@ -64,8 +64,8 @@ const GET_LANDING_PAGE = `
     }
   }
 
-  fragment Footer on LandingPage {
-    Footer {
+  fragment footer on LandingPage {
+    footer {
       image {
         ...imageData
       }
@@ -91,11 +91,11 @@ const GET_LANDING_PAGE = `
     landingPage {
       data {
         attributes {
-          ...Logo
-          ...Header
-          ...SectionBriefing
-          ...SectionGetStarted
-          ...Footer
+          ...logo
+          ...header
+          ...sectionBriefing
+          ...sectionGetStarted
+          ...footer
         }
       }
     }
