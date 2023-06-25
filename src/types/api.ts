@@ -1,3 +1,31 @@
+export type ContactsContent = {
+  title: string
+  icon: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
+  }
+}
+
+export type AboutUsContent = {
+  title: string
+  url: string
+}
+
+export type SocialLinksContent = {
+  icon: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
+  }
+}
+
 export type BriefingCards = {
   title: string
   description: string
@@ -11,10 +39,8 @@ export type BriefingCards = {
   }
 }
 
-export type FooterContent = {
-  description: string
-  url: string
-  logo: {
+export type LogoProps = {
+  image: {
     data: {
       attributes: {
         alternativeText: string
@@ -22,18 +48,9 @@ export type FooterContent = {
       }
     }
   }
-}
-
-export type LogoProps = {
-  data: {
-    attributes: {
-      alternativeText: string
-      url: string
-    }
-    button: {
-      text: string
-      url: string
-    }
+  button: {
+    label: string
+    url: string
   }
 }
 
@@ -41,8 +58,32 @@ export type HeaderProps = {
   title: string
   description: string
   button: {
-    text: string
+    label: string
     url: string
+  }
+  image: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
+  }
+  backgroundDesktop: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
+  }
+  backgroundMobile: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
   }
 }
 
@@ -53,28 +94,34 @@ export type SectionBriefingProps = {
 export type SectionGetStartedProps = {
   title: string
   button: {
-    text: string
+    label: string
     url: string
   }
 }
 
 export type FooterProps = {
-  logo: {
-    url: string
-    text: string
+  image: {
+    data: {
+      attributes: {
+        alternativeText: string
+        url: string
+      }
+    }
   }
-  footerContent: FooterContent[]
+  contacts: ContactsContent[]
+  aboutUs: AboutUsContent[]
+  socialLinks: SocialLinksContent[]
 }
 
 export type LandingPageProps = {
   landingPage: {
     data: {
       attributes: {
-        logo: LogoProps
-        header: HeaderProps
-        sectionBriefing: SectionBriefingProps
-        sectionGetStarted: SectionGetStartedProps
-        footer: FooterProps
+        Logo: LogoProps
+        Header: HeaderProps
+        SectionBriefing: SectionBriefingProps
+        SectionGetStarted: SectionGetStartedProps
+        Footer: FooterProps
       }
     }
   }

@@ -8,13 +8,13 @@ const GET_LANDING_PAGE = `
     }
   }
 
-  fragment buttonComponent on ComponentPageButton {
+  fragment buttonComponent on ComponentPagesButton {
     url
-    text
+    label
   }
 
   fragment Logo on LandingPage {
-    logo {
+    Logo {
       image {
         ...imageData
       }
@@ -25,17 +25,26 @@ const GET_LANDING_PAGE = `
   }
 
   fragment Header on LandingPage {
-    header {
+    Header {
       title
       description
       button {
         ...buttonComponent
       }
+      image {
+        ...imageData
+      }
+      backgroundDesktop {
+        ...imageData
+      }
+      backgroundMobile {
+        ...imageData
+      }
     }
   }
 
   fragment SectionBriefing on LandingPage {
-    sectionBriefing {
+    SectionBriefing {
       briefingCard {
         title
         description
@@ -47,7 +56,7 @@ const GET_LANDING_PAGE = `
   }
 
   fragment SectionGetStarted on LandingPage {
-    sectionGetStarted {
+    SectionGetStarted {
       title
       button {
         ...buttonComponent
@@ -56,14 +65,22 @@ const GET_LANDING_PAGE = `
   }
 
   fragment Footer on LandingPage {
-    footer {
-      logo {
+    Footer {
+      image {
         ...imageData
       }
-      footerContent {
-        description
-        url @skip(if: true)
-        icon @skip(if: true) {
+      contacts {
+        title
+        icon{
+          ...imageData
+        }
+      }
+      aboutUs {
+        title
+        url
+      }
+      socialLinks {
+        icon  {
           ...imageData
         }
       }
