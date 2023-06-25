@@ -12,7 +12,7 @@ import { LandingPageProps } from 'types/api'
 
 const Index = ({ landingPage }: LandingPageProps) => (
   <>
-    <Header />
+    <Header landingPage={landingPage} />
     <SectionBriefing />
     <SectionGetStarted />
     <Footer />
