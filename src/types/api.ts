@@ -111,6 +111,7 @@ export type FooterProps = {
   contacts: ContactsContent[]
   aboutUs: AboutUsContent[]
   socialLinks: SocialLinksContent[]
+  copyright: string
 }
 
 export type LandingPageProps = {

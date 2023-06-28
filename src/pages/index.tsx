@@ -15,7 +15,7 @@ const Index = ({ landingPage }: LandingPageProps) => (
     <Header landingPage={landingPage} />
     <SectionBriefing landingPage={landingPage} />
     <SectionGetStarted landingPage={landingPage} />
-    <Footer />
+    <Footer landingPage={landingPage} />
   </>
 )
 

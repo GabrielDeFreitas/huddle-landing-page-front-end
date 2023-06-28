@@ -84,6 +84,7 @@ const GET_LANDING_PAGE = `
           ...imageData
         }
       }
+      copyright
     }
   }
 
