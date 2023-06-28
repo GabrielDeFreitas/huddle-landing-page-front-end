@@ -10,47 +10,33 @@ interface ButtonWrapperProps {
 }
 
 export const ButtonWrapper = styled.button<ButtonWrapperProps>`
-  /* Estilos básicos do botão */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 14px 64px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: black;
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.07);
+  transition: ease-in 0.3s;
+  border: none;
 
-  /* Estilo para o botão "wide" */
-  ${({ wide }) =>
-    wide &&
-    css`
-      width: 100%;
-    `}
+  &:hover {
+    transform: scale(1.05);
+    opacity: 50%;
+  }
 
-  /* Estilo para o botão com preço */
-  ${({ withPrice }) =>
-    withPrice &&
-    css`
-      &:before {
-        content: '$';
-        margin-right: 0.25rem;
-      }
-    `}
-
-  /* Estilo para a variante primária */
   ${({ variant }) =>
     variant === 'primary' &&
     css`
-      background-color: #007bff;
-      color: #fff;
+      color: white;
+      background-color: hsla(322, 100%, 66%, 1);
 
       &:hover {
-        background-color: #0069d9;
+        color: white;
+        background-color: rgb(0, 57, 71);
       }
     `}
 
-  /* Estilo para a variante secundária */
   ${({ variant }) =>
     variant === 'secondary' &&
     css`
@@ -62,7 +48,6 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
       }
     `}
 
-  /* Estilos responsivos de tamanho */
   ${({ size }) =>
     size === 'xs' &&
     css`
@@ -91,7 +76,6 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
       font-size: 1.5rem;
     `}
 
-  /* Estilo para o botão desativado */
   ${({ disabled, enabled }) =>
     (disabled || enabled === false) &&
     css`
