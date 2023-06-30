@@ -29,8 +29,8 @@ export const Article = styled.article`{
 `
 
 export const Title = styled.h3`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-weight: 700;
+  line-height: 42px;
+  font-size: 3.75rem;
+  opacity: 90%;
 `

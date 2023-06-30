@@ -41,21 +41,29 @@ export const Article = styled.article`
 `
 
 export const Title = styled.h2`
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 28px;
+  font-weight: 700;
   line-height: 42px;
+  font-size: 4.3rem;
+  opacity: 90%;
 `
 
-export const Text = styled.p``
+export const Text = styled.p`
+  font-size: 2.2rem;
+  margin-block: 1.25rem;
+  text-align: inherit;
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
+`
 
 export const Card = styled.div`
-  padding: 100px;
+  padding: 8rem;
 
   @media (max-width: 800px) {
     display: flex;
     text-align: center;
-    padding: 20px;
+    padding: 3rem;
     flex-direction: column;
   }
 `

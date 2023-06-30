@@ -15,8 +15,20 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
+  h1, h2, h3 {
+    font-weight: 600;
+    line-height: 42px;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 27px;
+    opacity: 90%;
+  }
+
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    background-color: #fafeff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Poppins';
   }
 `
 

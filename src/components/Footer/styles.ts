@@ -57,6 +57,11 @@ export const UnorderedList = styled.ul`
 
 export const List = styled.li`
   padding-block: 0.8rem;
+
+  &:hover {
+    opacity: 50%;
+    text-decoration: underline;
+  }
 `
 
 export const Link = styled.a`

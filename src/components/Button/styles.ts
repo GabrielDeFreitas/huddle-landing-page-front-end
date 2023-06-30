@@ -19,6 +19,8 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
   box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.07);
   transition: ease-in 0.3s;
   border: none;
+  cursor: pointer;
+  font-size: 1.75rem;
 
   &:hover {
     transform: scale(1.05);
