@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.main``
+export const Wrapper = styled.header`
+  padding-block: 4.75rem;
+  background-color: hsla(193, 100%, 96%, 1);
+  padding-inline: 40px;
+`
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -8,6 +12,7 @@ export const Container = styled.div`
   justify-content: space-between;
   display: flex;
   align-items: center;
+  padding-bottom: 1.25rem;
 `
 export const Content = styled.div`
   display: grid;
@@ -16,6 +21,7 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 1270px;
   justify-content: space-between;
+  padding-block: 2rem;
 `
 
 export const TextBlock = styled.div`
@@ -24,8 +30,17 @@ export const TextBlock = styled.div`
   align-items: flex-start;
 `
 
-export const Title = styled.h1``
+export const Title = styled.h1`
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  color: rgb(0, 57, 71);
+  opacity: 90%;
+`
 
-export const Description = styled.p``
-
-// extender css de outra class
+export const Description = styled.p`
+  font-size: 2.2rem;
+  margin-block: 3rem;
+  text-align: inherit;
+  max-width: 570px;
+`

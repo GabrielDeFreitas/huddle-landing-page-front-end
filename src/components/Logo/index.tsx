@@ -1,9 +1,25 @@
 import * as S from './styles'
+import Image from 'next/image'
 
-const Logo = () => (
-  <S.Wrapper>
-    <h1>Logo</h1>
-  </S.Wrapper>
-)
+import { LandingPageProps } from 'types/api'
+
+type LogoProps = {
+  landingPage: LandingPageProps['landingPage']
+}
+
+const Logo = ({ landingPage }: LogoProps) => {
+  const {
+    attributes: { logo }
+  } = landingPage.data
+
+  return (
+    <Image
+      src={`http://localhost:1337${logo.image.data.attributes.url}`}
+      alt={logo.image.data.attributes.alternativeText}
+      width={200}
+      height={33}
+    />
+  )
+}
 
 export default Logo

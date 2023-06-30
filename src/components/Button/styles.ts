@@ -20,7 +20,6 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
   transition: ease-in 0.3s;
   border: none;
   cursor: pointer;
-  font-size: 1.75rem;
 
   &:hover {
     transform: scale(1.05);
@@ -42,8 +41,8 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
   ${({ variant }) =>
     variant === 'secondary' &&
     css`
-      background-color: #6c757d;
-      color: #fff;
+      background-color: white;
+      color: black;
 
       &:hover {
         background-color: #5a6268;

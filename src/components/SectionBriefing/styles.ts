@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   flex-direction: column;
   gap: 40px;
   padding-inline: 40px;
-  padding-block: 120px;
+  padding-block: 80px;
 
   @media (max-width: 800px) {
     padding-block: 60px;
