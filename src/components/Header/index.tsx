@@ -18,16 +18,24 @@ const Header = ({ landingPage }: HeaderProps) => {
     <S.Wrapper>
       <S.Container>
         <Logo landingPage={landingPage}></Logo>
-        <Button variant="secondary">{logo.button.label}</Button>
+        <Button
+          onClick={() => {
+            window.open(logo.button.url, '_blank')
+          }}
+          variant="secondary"
+        >
+          {logo.button.label}
+        </Button>
       </S.Container>
       <S.Content>
         <S.TextBlock>
           <S.Title>{header.title}</S.Title>
           <S.Description>{header.description}</S.Description>
           <Button
-            onClick={() => console.log('button click!')}
+            onClick={() => {
+              window.open(header.button.url, '_blank')
+            }}
             ariaLabel="Click to submit the form"
-            href={header.button.url}
           >
             {header.button.label}
           </Button>

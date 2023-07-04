@@ -14,7 +14,13 @@ const SectionGetStarted = ({ landingPage }: SectionGetStartedProps) => {
   return (
     <S.Article>
       <S.Title>{sectionGetStarted.title}</S.Title>
-      <Button>{sectionGetStarted.button.label}</Button>
+      <Button
+        onClick={() => {
+          window.open(sectionGetStarted.button.url, '_blank')
+        }}
+      >
+        {sectionGetStarted.button.label}
+      </Button>
     </S.Article>
   )
 }
