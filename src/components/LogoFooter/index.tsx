@@ -15,8 +15,8 @@ const Logo = ({ landingPage }: LogoProps) => {
     <Image
       src={`http://localhost:1337${footer.image.data.attributes.url}`}
       alt={footer.image.data.attributes.alternativeText}
-      width={200}
-      height={33}
+      width={220}
+      height={53}
     />
   )
 }
