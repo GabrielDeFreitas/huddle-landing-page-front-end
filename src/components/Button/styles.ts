@@ -49,7 +49,8 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
       color: black;
 
       &:hover {
-        background-color: #5a6268;
+        color: white;
+        background-color: rgb(0, 57, 71);
       }
     `}
 
