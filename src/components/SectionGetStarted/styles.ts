@@ -29,6 +29,7 @@ export const Article = styled.article`{
 `
 
 export const Title = styled.h3`
+  text-align: center;
   font-weight: 700;
   line-height: 42px;
   font-size: 3.75rem;

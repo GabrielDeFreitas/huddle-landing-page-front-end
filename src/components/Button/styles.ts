@@ -36,6 +36,10 @@ export const ButtonWrapper = styled.button<ButtonWrapperProps>`
         color: white;
         background-color: rgb(0, 57, 71);
       }
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
     `}
 
   ${({ variant }) =>

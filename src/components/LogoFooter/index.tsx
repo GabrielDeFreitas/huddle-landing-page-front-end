@@ -8,13 +8,13 @@ type LogoProps = {
 
 const Logo = ({ landingPage }: LogoProps) => {
   const {
-    attributes: { logo }
+    attributes: { footer }
   } = landingPage.data
 
   return (
     <Image
-      src={`http://localhost:1337${logo.image.data.attributes.url}`}
-      alt={logo.image.data.attributes.alternativeText}
+      src={`http://localhost:1337${footer.image.data.attributes.url}`}
+      alt={footer.image.data.attributes.alternativeText}
       width={200}
       height={33}
     />

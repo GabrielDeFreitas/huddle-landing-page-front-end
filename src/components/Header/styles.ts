@@ -22,6 +22,18 @@ export const Content = styled.div`
   max-width: 1270px;
   justify-content: space-between;
   padding-block: 2rem;
+
+  @media (max-width: 800px) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
 `
 
 export const TextBlock = styled.div`

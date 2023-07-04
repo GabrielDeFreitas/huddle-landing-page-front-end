@@ -1,5 +1,6 @@
 import * as S from './styles'
 import Image from 'next/image'
+import LogoFooter from 'components/LogoFooter'
 import { LandingPageProps } from 'types/api'
 
 type FooterProps = {
@@ -15,6 +16,9 @@ const Footer = ({ landingPage }: FooterProps) => {
     <S.Footer>
       <S.ContainerFooter>
         <S.Contact>
+          <div>
+            <LogoFooter landingPage={landingPage}></LogoFooter>
+          </div>
           {footer.contacts.map((item, index) => (
             <S.FlexInLine key={index}>
               <Image
