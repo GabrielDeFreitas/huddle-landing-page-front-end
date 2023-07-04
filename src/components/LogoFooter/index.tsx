@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { LandingPageProps } from 'types/api'
+import { getImageUrl } from 'utils/getImageUrl'
 
 type LogoProps = {
   landingPage: LandingPageProps['landingPage']
@@ -13,7 +14,7 @@ const Logo = ({ landingPage }: LogoProps) => {
 
   return (
     <Image
-      src={`http://localhost:1337${footer.image.data.attributes.url}`}
+      src={getImageUrl(footer.image.data.attributes.url)}
       alt={footer.image.data.attributes.alternativeText}
       width={220}
       height={53}

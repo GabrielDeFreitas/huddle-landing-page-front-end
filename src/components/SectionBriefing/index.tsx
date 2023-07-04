@@ -1,6 +1,7 @@
 import * as S from './styles'
 import Image from 'next/image'
 import { LandingPageProps } from 'types/api'
+import { getImageUrl } from 'utils/getImageUrl'
 
 type SectionBriefingProps = {
   landingPage: LandingPageProps['landingPage']
@@ -19,7 +20,7 @@ const SectionBriefing = ({ landingPage }: SectionBriefingProps) => {
             <>
               <S.Picure>
                 <Image
-                  src={`http://localhost:1337${item.image.data.attributes.url}`}
+                  src={getImageUrl(item.image.data.attributes.url)}
                   alt={item.image.data.attributes.alternativeText}
                   layout="responsive"
                   width={693}
@@ -40,7 +41,7 @@ const SectionBriefing = ({ landingPage }: SectionBriefingProps) => {
               </S.Card>
               <S.Picure>
                 <Image
-                  src={`http://localhost:1337${item.image.data.attributes.url}`}
+                  src={getImageUrl(item.image.data.attributes.url)}
                   alt={item.image.data.attributes.alternativeText}
                   layout="responsive"
                   width={693}

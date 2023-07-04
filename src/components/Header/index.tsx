@@ -4,6 +4,7 @@ import Button from 'components/Button'
 import Image from 'next/image'
 
 import { LandingPageProps } from 'types/api'
+import { getImageUrl } from 'utils/getImageUrl'
 
 type HeaderProps = {
   landingPage: LandingPageProps['landingPage']
@@ -42,7 +43,7 @@ const Header = ({ landingPage }: HeaderProps) => {
         </S.TextBlock>
         <picture>
           <Image
-            src={`http://localhost:1337${header.image.data.attributes.url}`}
+            src={getImageUrl(header.image.data.attributes.url)}
             alt={header.image.data.attributes.alternativeText}
             width={610}
             height={435}

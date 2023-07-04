@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
     GET_LANDING_PAGE
   )
 
-  console.dir(landingPage, { depth: null })
+  //console.dir(landingPage, { depth: null })
 
   return {
     props: {
