@@ -13,12 +13,38 @@
 
 ## Getting Started
 
-First, run the development server:
+### 📦 Install
+
+```
+$ git clone https://github.com/GabrielDeFreitas/huddle-landing-page-front-end.git
+
+$ yarn install
+```
+
+###  How to use
+
+Runs next which starts Next.js in development mode
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ yarn dev
+```
+
+Runs next build which builds the application for production usage
+
+```bash
+$ yarn build
+```
+
+Runs next start which starts a Next.js production server
+
+```bash
+$ yarn start
+```
+
+Runs next build and export which exports a files in a `out` folder to deploy
+
+```bash
+$ yarn deploy
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
