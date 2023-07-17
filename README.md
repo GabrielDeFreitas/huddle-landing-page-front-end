@@ -1,16 +1,3 @@
-
-## This project uses lot of stuff as:
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
-
 ## Getting Started
 
 ### 📦 Install
@@ -47,7 +34,7 @@ Runs next build and export which exports a files in a `out` folder to deploy
 $ yarn deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2) with your browser to see the result.
 
 ## Commands
 
@@ -61,3 +48,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `build-storybook`: create the build version of storybook
 - `generate`: automated file creation
 
+## Screenshot
+
+Layout from [Frontend Mentor](http://localhost:3000)
+
+![](public/img/desktop.png)
